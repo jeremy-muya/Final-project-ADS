@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[2]:
 
 
 import streamlit as st
@@ -9,11 +9,16 @@ import joblib
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
+
+# Print current working directory and list of files
+print("Current Working Directory:", os.getcwd())
+print("Files in Current Directory:", os.listdir())
 
 # Load the trained model
 logistic_regression_model = joblib.load('best_model_logistic_regression.pkl')
 
-# Load the dataset (only once)
+# Load the dataset 
 csv_path = "C:/Users/admin/Documents/Muya/hotel_bookings.csv"
 df = pd.read_csv(csv_path)
 

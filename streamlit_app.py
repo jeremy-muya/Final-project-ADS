@@ -19,7 +19,7 @@ print("Files in Current Directory:", os.listdir())
 logistic_regression_model = joblib.load('best_model_logistic_regression.pkl')
 
 # Load the dataset 
-csv_path = "C:/Users/admin/Documents/Muya/hotel_bookings.csv"
+csv_path = "hotel_bookings.csv"
 df = pd.read_csv(csv_path)
 
 # Page title
